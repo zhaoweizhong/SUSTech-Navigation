@@ -1,0 +1,377 @@
+﻿<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SUSTech Navigation</title>
+    <link href="css/style.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link href="favicon.ico" mce_href="favicon.ico" rel="icon" type="image/x-icon" />
+    <!-- Bootstrap -->
+	<script src="js/jquery.min.js"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<script src="js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="css/fontdiao.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <!-- 导航条Logo&名称 -->
+    <div class="navbar-header">
+	  <a class="navbar-brand" href="https://sustech.net">
+        <img alt="Brand" src="images/icon.png">
+      </a>
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">SUSTech Navigation</span>
+      </button>
+      <a class="navbar-brand" href="https://sustech.net/en.html">SUSTech Navigation</a>
+    </div><!-- /.导航条Logo&名称 -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <!-- 导航条搜索 -->
+	  <form class="navbar-form navbar-left" role="search">
+        <div class="input-group">
+          <input type="text" id="search-pc" class="form-control" placeholder="Search...">
+		  <span class="input-group-btn">
+		  <div class="btn-group">
+              <button type="submit" onclick="search('google', 'pc')" class="btn btn-default"><i class="fa fa-google" aria-hidden="true"></i>&nbsp;Google</button>
+              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="caret"></span>
+                <span class="sr-only">Search Engine</span>
+              </button>
+	            <ul class="dropdown-menu">
+                  <li><a href="javascript:void()" onclick="search('bing', 'pc')"><span onclick="search('bing', 'pc')"><i class="fa fa-windows" aria-hidden="true"></i>&nbsp;Bing</span></a></li>
+                  <li><a href="javascript:void()" onclick="search('baidu', 'pc')"><span onclick="search('baidu', 'pc')"><i class="fa fa-paw" aria-hidden="true"></i>&nbsp;Baidu</span></a></li>
+                  <li><a href="javascript:void()" onclick="search('googles', 'pc')"><span onclick="search('googles', 'pc')"><i class="fa fa-google" aria-hidden="true"></i>&nbsp;Google Scholar</span></a></li>
+                  <li><a href="javascript:void()" onclick="search('wikien', 'pc')"><span onclick="search('wikien', 'pc')"><i class="fa fa-wikipedia-w" aria-hidden="true"></i>&nbsp;Wikipedia</span></a></li>
+                </ul>
+			  </div>        
+          </span>
+        </div>
+      </form><!-- /.导航条搜索 -->
+	  <!-- 导航条右端 -->
+	  <ul class="nav navbar-nav navbar-right">
+        <li><a href="javascript:void()" onclick="setHome(this, window.location)"><i class="fa fa-home" aria-hidden="true"></i>&nbsp;Set As Homepage</a></li>
+		<li><a href="https://sustech.net"><i class="fa fa-globe" aria-hidden="true"></i>&nbsp;中文版</a></li>		
+      </ul><!-- /.导航条右端 -->
+    </div>
+  </div>
+</nav><!-- 导航条结束 -->
+<!-- 主体 -->
+<div class="u_main-wrapper">
+<div class="main">
+<!-- Banner -->
+<!--<div id="lanrentuku" style="height:76px;width:1180px" class="main-col">
+	<a href="https://www.wenjuan.com/s/QBV7Bb" target="_blank">
+		<img src="https://cache.sustech.net/Banner-en.png" alt="Fill out" width="1180" height="76" border="0">
+	</a>
+	<div style="position:relative;top:-73px;right:5px;float:right">
+		<a href="javascript:;" onclick="lanrentuku.style.display='none'">
+			<img src="https://cache.sustech.net/close.png" border="0">
+		</a>
+	</div>
+</div>--><!-- Banner结束 -->    
+    
+<div class="main-col">
+ 
+<div class="main-block">
+<span class="block-title"><i class="fa fa-globe" aria-hidden="true"></i>&nbsp;Useful Websites</span>
+<div class="block-grid-wrapper">
+<div class="block-grid">
+<a href="http://www.sustc.edu.cn/en" target="_blank">
+<i class="fa fa-home fa-4x" aria-hidden="true"></i><br>Official Website
+</a>
+</div>
+<div class="block-grid">
+<a href="http://www.sustc.edu.cn/mail/" target="_blank">
+<i class="fa fa-envelope fa-4x" aria-hidden="true"></i><br>Webmail
+</a>
+</div>
+<div class="block-grid">
+<a href="http://jwxt.sustc.edu.cn/jsxsd/" target="_blank">
+<i class="fa fa-bank fa-4x" aria-hidden="true"></i><br>Educational Administration
+</a>
+</div>
+<div class="block-grid">
+<a href="http://student.sustc.edu.cn/" target="_blank">
+<i class="fa fa-graduation-cap fa-4x" aria-hidden="true"></i><br>Students' Affairs Center
+</a>
+</div>
+<div class="block-grid">
+<a href="http://lib.sustc.edu.cn/" target="_blank">
+<i class="fa fa-book fa-4x" aria-hidden="true"></i><br>Lynn Library
+</a>
+</div>
+<div class="block-grid">
+<a href="http://pms.sustc.edu.cn/" target="_blank">
+<i class="fa fa-print fa-4x" aria-hidden="true"></i><br>Printing System
+</a>
+</div>
+<div class="block-grid">
+<a href="http://campuscard.sustc.edu.cn/" target="_blank">
+<i class="fa fa-credit-card fa-4x" aria-hidden="true"></i><br>Campus Card
+</a>
+</div>
+<div class="block-grid">
+<a href="http://sakai.sustc.edu.cn/" target="_blank">
+<i class="fa fa-user fa-4x" aria-hidden="true"></i><br>Sakai System
+</a>
+</div>
+<div class="block-grid">
+<a href="https://cas.sustc.edu.cn/cas/login?locale=en" target="_blank">
+<i class="fa fa-lock fa-4x" aria-hidden="true"></i><br>CAS System
+</a>
+</div>
+<div class="clear"></div>
+</div>
+</div>
+ 
+<div class="main-block">
+<span class="block-title"><i class="fa fa-music" aria-hidden="true"></i>&nbsp;Fun in SUSTech</span>
+<div class="block-grid-wrapper">
+<div class="block-grid">
+<a>
+<i class="fa fa-comments fa-4x" aria-hidden="true"></i><br>Campus BBS (Under Construction)
+</a>
+</div>
+<div class="block-grid">
+<a href="http://tieba.baidu.com/%E5%8D%97%E6%96%B9%E7%A7%91%E6%8A%80%E5%A4%A7%E5%AD%A6" target="_blank">
+<i class="icon-baidu" aria-hidden="true"></i><br>Baidu Tieba
+</a></div>
+<div class="block-grid">
+<a href="http://welcome.sustc.edu.cn" target="_blank">
+<i class="fa fa-star fa-4x" aria-hidden="true"></i><br>Freshman's Website
+</a></div>
+<div class="block-grid">
+<a href="http://www.sustc.edu.cn/campus_3_1" target="_blank">
+<i class="fa fa-flag fa-4x" aria-hidden="true"></i><br>Students' Union (SUSU)
+</a></div>
+<div class="block-grid">
+<a href="http://www.sustc.edu.cn/campus_3_2" target="_blank">
+<i class="fa fa-users fa-4x" aria-hidden="true"></i><br>School Club Association
+</a></div>
+<div class="block-grid">
+<a href="http://www.sustc.edu.cn/campus_6_3" target="_blank">
+<i class="fa fa-heartbeat fa-4x" aria-hidden="true"></i><br>SUSTech Welfare Association
+</a></div>
+
+<div class="clear"></div>
+</div>
+</div>
+</div>
+<div class="main-col">
+ 
+<div class="main-block">
+<span class="block-title"><i class="fa fa-pencil-square" aria-hidden="true"></i>&nbsp;Study in SUSTech</span>
+<div class="block-grid-wrapper">
+<div class="block-grid">
+<a href="http://lib.sustc.edu.cn/" target="_blank">
+<i class="fa fa-book fa-4x" aria-hidden="true"></i><br>Lynn Library
+</a>
+</div>
+<div class="block-grid">
+<a href="http://www.sustc.edu.cn/calendar" target="_blank">
+<i class="fa fa-calendar fa-4x" aria-hidden="true"></i><br>School Calendar
+</a>
+</div>
+<div class="block-grid">
+<a href="http://172.18.1.231:8080/" target="_blank">
+<i class="fa fa-check fa-4x" aria-hidden="true"></i><br>Lab Testing System
+</a>
+</div>
+<div class="block-grid">
+<a href="http://eval.sustc.edu.cn/" target="_blank">
+<i class="fa fa-dashboard fa-4x" aria-hidden="true"></i><br>Teaching Evaluation System
+</a>
+</div>
+<div class="block-grid">
+<a href="http://sustc.fy.chaoxing.com/" target="_blank">
+<i class="fa fa-pencil-square-o fa-4x" aria-hidden="true"></i><br>General Courses
+</a>
+</div>
+<div class="block-grid">
+<a href="http://172.18.6.16/" target="_blank">
+<i class="fa fa-flask fa-4x" aria-hidden="true"></i><br>Physical Educational Experiments
+</a>
+</div>
+<div class="block-grid">
+<a href="http://jwxt.sustc.edu.cn/jsxsd/" target="_blank">
+<i class="fa fa-bank fa-4x" aria-hidden="true"></i><br>Educational Administration
+</a>
+</div>
+<div class="block-grid">
+<a href="http://www.sustc.edu.cn/news_events_jiangzuo" target="_blank">
+<i class="fa fa-rss-square fa-4x" aria-hidden="true"></i><br>Lectures Announcement
+</a>
+</div>
+<div class="block-grid">
+<a href="http://helpdesk.sustc.edu.cn/" target="_blank">
+<i class="fa fa-question-circle fa-4x" aria-hidden="true"></i><br>Help Desk
+</a>
+</div>
+<div class="clear"></div>
+</div>
+</div>
+ 
+<div class="main-block">
+<span class="block-title"><i class="fa fa-home" aria-hidden="true"></i>&nbsp;Colleges in SUSTech</span>
+<div class="block-grid-wrapper">
+<div class="block-grid">
+<a href="http://www.sustc.edu.cn/campus_4_1" target="_blank">
+<i class="fa fa-home fa-4x" aria-hidden="true"></i><br>Zhiren College
+</a></div>
+<div class="block-grid">
+<a href="http://www.sustc.edu.cn/campus_4_2" target="_blank">
+<i class="fa fa-home fa-4x" aria-hidden="true"></i><br>Shuren College
+</a></div>
+<div class="block-grid">
+<a href="http://www.sustc.edu.cn/campus_4_3" target="_blank">
+<i class="fa fa-home fa-4x" aria-hidden="true"></i><br>Zhicheng College
+</a></div>
+<div class="block-grid">
+<a href="http://www.sustc.edu.cn/campus_4_4" target="_blank">
+<i class="fa fa-home fa-4x" aria-hidden="true"></i><br>Shude College
+</a></div>
+<div class="block-grid">
+<a href="http://www.sustc.edu.cn/campus_zhixing" target="_blank">
+<i class="fa fa-home fa-4x" aria-hidden="true"></i><br>Zhixin College
+</a></div>
+<div class="block-grid">
+<a href="http://www.sustc.edu.cn/campus_shuli" target="_blank">
+<i class="fa fa-home fa-4x" aria-hidden="true"></i><br>Shuli College
+</a></div>
+<div class="clear"></div>
+</div>
+</div>
+</div>
+<div class="main-col">
+ 
+<div class="main-block">
+<span class="block-title"><i class="fa fa-external-link" aria-hidden="true"></i>&nbsp;External Websites</span>
+<div class="block-grid-wrapper">
+<div class="block-grid">
+<a href="http://www.zhihu.com/" target="_blank">
+<i class="icon-zhihu-square"></i><br>Zhihu</a>
+</div>
+<div class="block-grid">
+<a href="http://www.ted.com/" target="_blank">
+<i class="fa fa-external-link fa-4x" aria-hidden="true"></i><br>TED</a></a>
+</div>
+<div class="block-grid">
+<a href="http://www.weibo.com/" target="_blank">
+<i class="icon-weibo"></i><br>Sina Weibo</a>
+</div>
+<div class="block-grid">
+<a href="http://www.taobao.com/" target="_blank">
+<i class="icon-taobao"></i><br>Taobao</a>
+</div>
+<div class="block-grid">
+<a href="http://www.jd.com/" target="_blank">
+<i class="icon-jd"></i><br>JD</a>
+</div>
+<div class="block-grid">
+<a href="https://portal.mypearson.com/login" target="_blank">
+<i class="fa fa-external-link fa-4x" aria-hidden="true"></i><br>Pearson</a></a>
+</div>
+<div class="block-grid">
+<a href="https://www.wolframalpha.com" target="_blank">
+<i class="fa fa-certificate fa-4x" aria-hidden="true"></i><br>WolframAlpha</a>
+</div>
+<div class="block-grid">
+<a href="https://en.wikipedia.org" target="_blank">
+<i class="fa fa-wikipedia-w fa-4x" aria-hidden="true"></i><br>Wikipedia</a>
+</div>
+<div class="block-grid">
+<a href="https://github.com" target="_blank">
+<i class="fa fa-github fa-4x" aria-hidden="true"></i><br>Github</a>
+</div>
+<div class="clear"></div>
+</div>
+</div>
+ 
+<div class="main-block">
+<span class="block-title"><i class="fa fa-link" aria-hidden="true"></i>&nbsp;Links</span>
+<div class="block-grid-wrapper">
+<div class="block-grid">
+<a href="https://store.sustech.net" target="_blank">
+<i class="fa fa-shopping-cart fa-4x" aria-hidden="true"></i><br>Software Mall
+</a></div>
+<div class="block-grid">
+<a href="http://nkd.nanfengfood.com/" target="_blank">
+<i class="fa fa-cutlery fa-4x" aria-hidden="true"></i><br>Nanfeng Takeout
+</a></div>
+<div class="block-grid">
+<a href="https://weidian.com/?userid=333686408" target="_blank">
+<i class="fa fa-book fa-4x" aria-hidden="true"></i><br>S.N. Gallery
+</a></div>
+<div class="block-grid">
+<a href="https://www.lommevpn.com/" target="_blank">
+<i class="fa fa-paper-plane fa-4x" aria-hidden="true"></i><br>Highspeed VPN
+</a></div>
+<div class="block-grid">
+<a href="https://www.wenjuan.com/s/qMnemik/" target="_blank">
+<i class="fa fa-file-text-o fa-4x" aria-hidden="true"></i><br>Apply for Links
+</a></div>
+<div class="block-grid">
+<a href="http://www.lomme.cn" target="_blank">
+<i class="fa fa-link fa-4x" aria-hidden="true"></i><br>Lomme Cloud
+</a></div>
+<div class="clear"></div>
+</div>
+</div>
+</div>
+<div class="clear"></div>
+</div><!-- 主体结束 -->
+<!-- 底部开始 -->
+<div class="footer">
+<a class="foota">Copyright&nbsp;<i class="fa fa-copyright" aria-hidden="true"></i>&nbsp;2016&nbsp;<a href="https://zatrix.cn" target="_blank">Zhaowei Zhong</a>,&nbsp;Class 1617,&nbsp;SUSTech<br>ICP License: SN-16009987<br>Servers are kindly provided by <a href="http://www.lomme.cn" target="_blank">Lomme Cloud</a>.<br><script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1260604593'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s95.cnzz.com/z_stat.php%3Fid%3D1260604593%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script></a>
+
+
+</div><!-- 底部结束 -->
+	<script>
+        var setHome = function(obj, url) {
+            try {
+                obj.style.behavior = 'url(#default#homepage)';
+                obj.setHomePage(url);
+            } catch(e) {
+                if(window.netscape) {
+                    try {
+                        netscape.security.PrivilegeManager.enablePrivilege('UniversalXPConnect');
+                    } catch(e) {
+                        alert('Sorry, this operation was blocked by your browser. \nSolution1: Please enter “about:config” in the address bar and set th value of [signed.applets.codebase_principal_support] to "true"。\nSolution2: Set '+url+' as homepage manually.');
+                    }
+                    var prefs = Components.classes['@mozilla.org/preferences-service;1'].getService(Components.interfaces.nsIPrefBranch);
+                    prefs.setCharPref('browser.startup.homepage',url);
+                } else {
+                    alert('Sorry, this operation was blocked by your browser. \nYou should set '+url+' as homepage manually.');
+                }
+            }
+        };
+        var search = function(site, env) {
+            var searchId = env === 'pc' ? 'search-pc' : 'search-mobile';
+            var baseURL = {
+                google: 'https://www.google.com/#q=',
+                googles: 'https://scholar.google.com/scholar?q=',
+                baidu: 'https://www.baidu.com/s?wd=',
+                bing: 'https://www.bing.com/search?q=',
+                wikien: 'https://en.wikipedia.org/wiki/'
+            };
+            window.open(baseURL[site] + document.getElementById(searchId).value);
+        };
+        document.getElementById("search-form-pc").onsubmit = function(e) {
+            e.preventDefault();
+            search('google', 'pc');
+        };
+        document.getElementById("search-form-mobile").onsubmit = function(e) {
+            e.preventDefault();
+            search('bing', 'mobile');
+        };
+    </script>
+  </body>
+</html>
